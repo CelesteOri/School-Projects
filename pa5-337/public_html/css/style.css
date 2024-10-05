@@ -1,0 +1,84 @@
+/* 
+Author: Honor Jang
+Course: CSc 337
+Project: PA 5
+Description: The styling for the Welcome to the Jumble. It mostly deals with coloring,
+	fonts, and spacing, as the functionality is largely working thanks to
+	JavaScript.
+*/
+
+html {
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  font-family: "Courier", monospace;
+  width: 100%;
+  height: 100%;
+}
+
+#main {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 30%;
+  height: 100%;
+  background: #323232;
+  color: #FFFFFF;
+  font-family: Impact, "Arial Black", sans-serif;
+}
+
+#contents {
+  position: absolute;
+  top: 50px;
+  left: 10%;
+  width: 80%;
+  height: 400px;
+}
+
+#contents h1 {
+  font-size: 35px;
+  letter-spacing: 1px;
+}
+
+#shiftNum {
+  display: inline-block;
+  width: 20px;
+  margin-left: -2px;
+}
+
+#caesar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 70%;
+  height: 50%;
+  background: #64c864;
+}
+
+#square {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 70%;
+  height: 50%;
+  background: #09f9f9;
+}
+
+#squareShift {
+  margin: 10px auto 5px auto;
+  border-collapse: collapse;
+}
+
+#squareShift td {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  padding: 3px;
+  border: 1px solid #e75f5e;
+}
+
+#caesarText, #squareText {
+  margin-top: 10px;
+  font-size: 60px;
+  font-weight: bold;
+}

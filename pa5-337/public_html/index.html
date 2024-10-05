@@ -1,0 +1,84 @@
+<!--
+Author: Honor Jang
+Course: CSc 337
+Project: PA 5
+Description: This is the HTML for the single-page "website" Welcome to the
+	Jumble, which allows users to type in text in the input field and run
+	a Caesar cipher (using a slider) as well as a square cipher (based on
+	the square seen below the slider and Update Square button). The cipher
+	texts appear on the right side of the page, with Caesar on the top
+	half (green) and square on the bottom half (blue), respectively. All
+	parts update as they should thanks to main.js.
+-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <script src="./scripts/main.js"></script>
+    <title>Welcome to the Jumble</title>
+  </head>
+
+  <body>
+    <div id="main">
+      <div id="contents">
+        <h1>Welcome to the Jumble</h1>
+        <input type="text" id="plainText" name="plainText"
+          oninput="caesarCipher(); squareCipher();">
+        <br><br>
+        <label for="shift" id="shiftNum">0</label>
+        <input type="range" id="shift" name="caesarShift"
+          min="0" max="26" value="0" oninput="caesarCipher();">
+        <br><br>
+        <button type="submit" onclick="updateSquare();">Update Square</button> 
+        <table id="squareShift">
+          <tr>
+            <td>A</td>
+            <td>B</td>
+            <td>C</td>
+            <td>D</td>
+            <td>E</td>
+          </tr>
+          <tr>
+            <td>F</td>
+            <td>G</td>
+            <td>H</td>
+            <td>I</td>
+            <td>J</td>
+          </tr>
+          <tr>
+            <td>K</td>
+            <td>L</td>
+            <td>M</td>
+            <td>N</td>
+           <td>O</td>
+          </tr>
+          <tr>
+            <td>P</td>
+            <td>Q</td>
+            <td>R</td>
+            <td>S</td>
+            <td>T</td>
+          </tr>
+          <tr>
+            <td>U</td>
+            <td>V</td>
+            <td>W</td>
+            <td>X</td>
+            <td>Y</td>
+          </tr>
+        </table> 
+      </div>
+    </div>
+
+    <div id="caesar">
+      <div id="caesarText"></div>
+    </div>
+
+    <div id="square">
+      <div id="squareText"></div>
+    </div>
+  </body>
+</html>
