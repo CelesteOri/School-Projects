@@ -1,0 +1,33 @@
+<!--
+	Author: Joshua A. Levine (used by Honor Jang)
+	Course: CSc 444
+	Project: A10
+	Description: The base HTML file that the SVGs are rendered in.
+		The code in a10.js appends graphs to the appropriate divs.
+		The other scripts contain the functions (d3.js, vtk.js,
+		volren.js) that a10.js uses.  
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="vtk.js"></script>
+    <script src="d3.js"></script>
+    <script src="volren.js"></script>
+  </head>
+  <body>
+    <div>
+      <input type="file" id="loadData">
+      <button id="sequential">Sequential</button>
+      <button id="diverging">Diverging</button>
+      <button id="categorical">Categorical</button>
+    </div> 
+
+    <div>
+      <div id="volren"></div>
+      <div id="tfunc"></div>
+    </div>
+
+    <script type="text/javascript" src="a10.js"></script>
+  </body>
+</html>

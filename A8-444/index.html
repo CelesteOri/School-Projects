@@ -1,0 +1,30 @@
+<!--
+	Author: Joshua A. Levine (used by Honor Jang)
+	Course: CSc 444
+	Project: A07
+	Description: The base HTML file that the SVGs are rendered in.
+		The code in a08.js appends graph to the appropriate div.
+		The other scripts contain the functions (d3.js) or
+		data (flare.js / test-cases.js) that a08.js uses. 
+		Two buttons were added for best-size and best-count. 
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <script src="d3.js"></script>
+    <script src="flare.js"></script>
+    <script src="test-cases.js"></script>
+  </head>
+  <body style="padding: 0; margin: 0">
+    <svg id="svg"></svg>
+    <div style="position: absolute; right: 1em; top: 1em">
+      <button id="size">Size</button>
+      <button id="count">Count</button>
+      <button id="best-size">Best Size</button>
+      <button id="best-count">Best Count</button>
+    </div>
+    <script src="a08.js"></script>
+  </body>
+</html>
+  
